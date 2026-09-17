@@ -1,0 +1,9 @@
+.linkbox{
+    display: flex;
+    justify-content: end;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
