@@ -1,3 +1,11 @@
+.whiteout {
+    color: whitesmoke;
+}
+
+.buttoncol{
+    color:black;
+}
+
 .linkbox{
     display: flex;
     justify-content: end;
@@ -6,4 +14,62 @@
 .title{
     display: flex;
     justify-content: center;
+}
+
+.homepage{
+    height: 100vh;
+    background-image: radial-gradient(#AAFF00, #AFE1AF);
+    margin: 0;
+}
+
+.lasagnapage{
+    height: 100vh;
+    background-image: radial-gradient(#ff7b00, #e9450a);
+    margin: 0;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.imgflex{
+    display: flex;
+    justify-content: center;
+}
+
+li{
+    font-size: 20px;
+}
+
+.home-table{
+    border: 2px red;
+    border-collapse: collapse;
+}
+
+table th{
+    padding: 20px 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.tony {
+  background-image: linear-gradient(to left, violet, indigo, blue, #006400, yellow, orange, red);   -webkit-background-clip: text;
+  color: transparent;
 }
