@@ -1,19 +1,47 @@
+/* border-box reset */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
 .whiteout {
     color: whitesmoke;
+
 }
 
 .buttoncol{
     color:black;
 }
 
-.linkbox{
+.top {
     display: flex;
-    justify-content: end;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.title{
-    display: flex;
+.title {
+    text-align: center;
+    flex: 1;
+}
+
+.link {
+    width: 120px;
+    align-items: center;
     justify-content: center;
+}
+
+.home-button {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.spacer {
+    width: 150px;
 }
 
 .homepage{
@@ -57,19 +85,39 @@ li{
 }
 
 .home-table{
+    display: flex;
     border: 2px red;
     border-collapse: collapse;
+    justify-content: center;
 }
 
 table th{
-    padding: 20px 100px;
+    padding: 30px 70px;
 }
 
 a {
+    color: black;
     text-decoration: none;
 }
 
-.tony {
-  background-image: linear-gradient(to left, violet, indigo, blue, #006400, yellow, orange, red);   -webkit-background-clip: text;
-  color: transparent;
+.road{
+    color: rgb(115, 44, 0);
+    -webkit-text-stroke: 0.4px black;
+}
+
+.las{
+    color:#e9450a;
+}
+
+.mcflat{
+    color: rgb(230, 132, 11);
+}
+
+.gaslighter{
+    color: #AAFF00;
+    -webkit-text-stroke: 1px black;
+}
+
+.mcflatpage{
+    background-color: bisque;
 }
