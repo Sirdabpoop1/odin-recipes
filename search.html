@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealMash - Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="homepage">
+
+    <nav>
+        <ul>
+            <li>
+                <div class="dropdown">
+                    <button class="drop-button">Recipe List</button>
+                    <div class="dropdown-content-all">
+                        <a href="lasagna.html">Lasagna</a>
+                        <a href="mcflat.html">McFlat</a>
+                        <a href="rockyroad.html">Rocky Road</a>
+                        <a href="gaslighter.html">Gaslighter's Best Dish</a>
+                        <a href="foo.html">Foo</a>
+                        <a href="bar.html">Bar</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="https://github.com/ashermemon/meal-mash">About</a></li>
+            <li><a href="../search.html">Search</a></li>
+            <li><a href="../index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <main class="search-area">
+        <label for="search-box" class="search-label">
+            Eat up what?
+        </label>
+        <input type="search" id="search-box" placeholder="Try fooBar" autocomplete="off">
+        <p id="search-status" class="search-status"></p>
+        <div id="results" class="results"></div>
+    </main>
+
+    <footer>Footer + Website brought to you by BIGHEADERS CO INC™</footer>
+
+    <script src="search.js"></script>
+</body>
+</html>

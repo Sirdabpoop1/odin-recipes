@@ -58,6 +58,10 @@ body{
     position: relative;
 }
 
+.dropdown .title h1 {
+    display: inline-block;
+}
+
 .dropdown-content-lasagna{
     display: none;
     position: absolute;
@@ -69,8 +73,8 @@ body{
     align-items: center;
 }
 
-.dropdown:hover .dropdown-content-lasagna {
-  display: block;
+.dropdown:has(.title h1:hover) .dropdown-content-lasagna {
+    display: block;
 }
 
 .imgflex{
@@ -126,8 +130,8 @@ a {
     align-items: center;
 }
 
-.dropdown:hover .dropdown-content-mcflat {
-  display: block;
+.dropdown:has(.title h1:hover) .dropdown-content-mcflat {
+    display: block;
 }
 
 .gaslighter{
@@ -150,8 +154,8 @@ a {
     align-items: center;
 }
 
-.dropdown:hover .dropdown-content-road {
-  display: block;
+.dropdown:has(.title h1:hover) .dropdown-content-road {
+    display: block;
 }
 
 .mcflatpage{
@@ -179,7 +183,7 @@ nav a {
     padding: 16px;
     color: white;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     transition: text-decoration-color 0.5s ease;
 }
 nav a:hover, nav a:focus {
@@ -216,7 +220,7 @@ footer {
     border: 0px;
     color: white;
     font-family: 'Comic Sans MS', 'Comic Sans', cursive;
-    font-size: 30px;
+    font-size: 20px;
     padding: 16px;
 }
 
@@ -227,11 +231,11 @@ footer {
 }
 
 .dropdown:hover .dropdown-content-all {
-  display: block;
+    display: block;
 }
 
 .dropdown:hover .drop-button {
-  background-color: #272927;
+    background-color: #272927;
 }
 
 .thebigchunkypart{
@@ -254,6 +258,110 @@ footer {
     align-items: center;
 }
 
-.dropdown:hover .dropdown-content-gas {
-  display: block;
+.dropdown:has(.title h1:hover) .dropdown-content-gas {
+    display: block;
+}
+
+.dropdown-content-foo{
+    display: none;
+    position: absolute;
+    background-color: yellow;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown:has(.title h1:hover) .dropdown-content-foo {
+    display: block;
+}
+
+.dropdown-content-bar{
+    display: none;
+    position: absolute;
+    background-color: silver;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown:has(.title h1:hover) .dropdown-content-bar {
+    display: block;
+}
+
+.search-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-label {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+#search-box {
+    width: 100%;
+    max-width: 600px;
+    padding: 14px 24px;
+    font-size: 24px;
+    font-family: inherit;
+    border: 3px solid black;
+    outline: none;
+}
+
+.search-status {
+    font-size: 20px;
+    min-height: 1.5px;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.result-card {
+    width: 250px;
+    background-color: whitesmoke;
+    border: 3px solid black;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+}
+
+.result-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.result-card h2 {
+    margin: 12px 0 4px;
+    font-size: 26px;
+}
+
+.result-card:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.result-card:focus-visible {
+    outline: 4px solid black;
+    outline-offset: 4px;
+}
+
+.user-recipe {
+    color: rebeccapurple;
+}
+
+.bar{
+    color: silver;
 }
