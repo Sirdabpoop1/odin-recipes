@@ -14,6 +14,14 @@ html {
 
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .buttoncol{
     color:black;
 }
@@ -21,18 +29,12 @@ html {
 .top {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .title {
     text-align: center;
     flex: 1;
-}
-
-.link {
-    width: 120px;
-    align-items: center;
-    justify-content: center;
 }
 
 .home-button {
@@ -45,33 +47,29 @@ html {
 }
 
 .homepage{
-    height: 100vh;
     background-image: radial-gradient(#AAFF00, #AFE1AF);
-    margin: 0;
 }
 
 .lasagnapage{
-    height: 100vh;
     background-image: radial-gradient(#ff7b00, #e9450a);
-    margin: 0;
 }
 
 .dropdown{
     position: relative;
 }
 
-.dropdown-content{
+.dropdown-content-lasagna{
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 130px;
+    background-color: #ff7b00;
+    min-width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     justify-content: center;
     align-items: center;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content-lasagna {
   display: block;
 }
 
@@ -84,15 +82,19 @@ li{
     font-size: 20px;
 }
 
-.home-table{
+.home-grid {
     display: flex;
-    border: 2px red;
-    border-collapse: collapse;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
 }
 
-table th{
-    padding: 30px 70px;
+.home-item {
+    flex: 0 0 calc(50% - 10px);
+}
+
+.home-item img {
+    max-width: 100%;
 }
 
 a {
@@ -113,11 +115,145 @@ a {
     color: rgb(230, 132, 11);
 }
 
+.dropdown-content-mcflat{
+    display: none;
+    position: absolute;
+    background-color: bisque;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown:hover .dropdown-content-mcflat {
+  display: block;
+}
+
 .gaslighter{
     color: #AAFF00;
     -webkit-text-stroke: 1px black;
 }
 
+.road-page{
+    background-color: rgb(115, 44, 0);
+}
+
+.dropdown-content-road{
+    display: none;
+    position: absolute;
+    background-color: rgb(115, 44, 0);
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown:hover .dropdown-content-road {
+  display: block;
+}
+
 .mcflatpage{
     background-color: bisque;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+nav a {
+    display: block;
+    padding: 16px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    transition: text-decoration-color 0.5s ease;
+}
+nav a:hover, nav a:focus {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 6px;
+}
+
+footer {
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 15px;
+    color: black;
+    margin-top: auto;
+    position: sticky;
+    padding: 7px;
+    bottom: 0;
+    font-weight: 100;
+}
+
+.dropdown-content-all{
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.drop-button{
+    background-color: black;
+    border: 0px;
+    color: white;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 30px;
+    padding: 16px;
+}
+
+.dropdown-content-all a:hover{
+    background-color: #f1f1f1;
+    color: black;
+    text-decoration-color: black;
+}
+
+.dropdown:hover .dropdown-content-all {
+  display: block;
+}
+
+.dropdown:hover .drop-button {
+  background-color: #272927;
+}
+
+.thebigchunkypart{
+    padding-left: 20px;
+}
+
+.gaslighter-title {
+    color: white;
+    -webkit-text-stroke: 1.5px black;
+}
+
+.dropdown-content-gas{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown:hover .dropdown-content-gas {
+  display: block;
 }
