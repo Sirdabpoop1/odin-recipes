@@ -211,7 +211,7 @@ function showResults(query) {
         }
 
         if (matches.length === 0) {
-            statusText.textContent = 'Nothing matches "' + query + '". Try a food, like cheese or chocolate.';
+            statusText.textContent = 'Nothing matches "' + query + '". Try a food, like chocolate, or an object like rebar.';
         } else if (matches.length === 1) {
             statusText.textContent = "1 recipe found";
         } else {
